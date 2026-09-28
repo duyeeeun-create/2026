@@ -83,8 +83,8 @@ var number01 = 10;
 var number02 = 20;
 
 
-var number01 = number02;
 var temp = number01;
+number01 = number02;
 number02 = temp;
 
 console.log( 'number01:', number01);
