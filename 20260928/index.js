@@ -54,13 +54,14 @@
 //     classTeacherName: "홍길동"
 // }
 
-// //2. object 데이터 조회 방법: .(도트접근 연산자)이용
+//2. object 데이터 조회 방법: .(도트접근 연산자)이용
 // console.log('classLocation:', ourClass.classLocation);
 
-// //3.object 데이터 변경 방법 :. (도트접근 연산자)이용
+//3.object 데이터 변경 방법 :. (도트접근 연산자)이용
 // ourClass.classLocation = "5층";
+// console.log('classLocation:', ourClass.classLocation);
 
-//4.object 데이터삭제 방법 :delete &.(도트접근 연산자)이용
+// 4.object 데이터삭제 방법 :delete &.(도트접근 연산자)이용
 // delete ourClass.classLocation;
 // console.log('ourClass:', ourClass);
 

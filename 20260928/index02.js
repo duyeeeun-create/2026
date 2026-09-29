@@ -9,15 +9,15 @@
 */
 //산술 연산자
 //덧셈연산자 
-var num1 = 10;
-var num2 = 20;
-console.log(num1 + num2); //30
-console.log(num1 - num2); //-10
-console.log(num1 * num2); //200
-console.log(num1 / num2); //0.5
-console.log(num1 % num2); //10
-console.log(10 % 3); //1
-console.log(3 ** 2); //9
+// var num1 = 10;
+// var num2 = 20;
+// console.log(num1 + num2); //30
+// console.log(num1 - num2); //-10
+// console.log(num1 * num2); //200
+// console.log(num1 / num2); //0.5
+// console.log(num1 % num2); //10
+// console.log(10 % 3); //1
+// console.log(3 ** 2); //9
 
 // Q1 dw전자 회사의 1분기 매출의 총 합을 구하자 프로그램 만드시오
 // 사용자 1월, 2월, 3월 매출액을 입력하면 1분기 총합 출력
@@ -42,7 +42,7 @@ console.log(3 ** 2); //9
 // // Q2 dw전자 회사의 1분기 매출의 총 합을 구하자 프로그램 만드시오
 // // 사용자 1분기 매출액과 매입액 입력하면 수익 계산 프로그램 만들어라
 // var sales = Number(prompt('1분기 매출 입력:'));
-// var purchase = Number(prompt('1분기 매출 입력:'));
+// var purchase = Number(prompt('1분기 지출 입력:'));
 // var profit=  sales - purchase;
 // console.log('수익:', profit);
 
@@ -96,22 +96,22 @@ console.log(`restRread: ${restRread}`);
 // 하루에 한 사람이 한 명씩 감염시키는 것으로 나타났습니다
 //확진자 한 사람이 나올 경우 30일 이후에 몇 명의 감염자가 나오는지 계산해봅시다
 
-var man = 2;
-var date = 30;
-var total = man ** date;
-console.log(`total: ${total}`);
+// var man = 2;
+// var date = 30;
+// var total = man ** date;
+// console.log(`total: ${total}`);
 
 
-//대입(할당) 연산자, 복합 대입 연산자
-var num5 = 10;
-console.log(`num5: ${num5}`);
+// //대입(할당) 연산자, 복합 대입 연산자
+// var num5 = 10;
+// console.log(`num5: ${num5}`);
 
-// num5 = num5 + 5; ->
- num5 += 5;
- console.log(`num5: ${num5}`);
+// // num5 = num5 + 5; ->
+//  num5 += 5;
+//  console.log(`num5: ${num5}`);
 
- num5 *= 5;
- console.log(`num5: ${num5}`);
+//  num5 *= 5;
+//  console.log(`num5: ${num5}`);
 
- num5 %= 5;
- console.log(`num5: ${num5}`);
+//  num5 %= 5;
+//  console.log(`num5: ${num5}`);
