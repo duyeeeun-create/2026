@@ -70,9 +70,9 @@
 //3의 배수만 출력
 // for (var i = 1; i < 21; i++){
 
-//     if ( i %3== 0  ) {
-//         console.log( i );
-//     }}
+    // if ( i %3== 0  ) {
+    //     console.log( i );
+    // }}
 
 // console.log('i');  // 문자 i
 // console.log(i);    // 변수 i의 값
