@@ -3,34 +3,33 @@
 // const SIGN_OUT_VIEW = 3;
 // const DIARY_WRITE_VIEW = 4;
 // const DIARY_LIST_VIEW = 5;
-const VIEW_NO={
- SIGN_UP_VIEW : 1,
- SIGN_IN_VIEW : 2,
- SIGN_OUT_VIEW : 3,
- DIARY_WRITE_VIEW : 4,
- DIARY_LIST_VIEW : 5
+
+const VIEW_NO = {
+    SIGN_UP_VIEW : 1,
+    SIGN_IN_VIEW : 2,
+    SIGN_OUT_VIEW : 3,
+    DIARY_WRITE_VIEW : 4,
+    DIARY_LIST_VIEW : 5,
+    HOME_VIEW :6
 }
 
-let signUpWrap ='';
-let signInWrap ='';
-let writeWrap ='';
-let listWrap ='';
-
-//initViews 상수const로 바꾸면 안되는 변수
+let signUpWrap = '';
+let signInWrap = '';
+let writeWrap = '';
+let listWrap = '';
 
 const initViews = () => {
 
-     signUpWrap = document.querySelector('#wrap > div.sign_up_wrap');
-     signInWrap = document.querySelector('#wrap > div.sign_in_wrap');
-     writeWrap = document.querySelector('#wrap > div.write_wrap');
-     listWrap = document.querySelector('#wrap > div.list_wrap');
+    signUpWrap = document.querySelector('#wrap > div.sign_up_wrap');
+    signInWrap = document.querySelector('#wrap > div.sign_in_wrap');
+    writeWrap = document.querySelector('#wrap > div.write_wrap');
+    listWrap = document.querySelector('#wrap > div.list_wrap');
 
 }
 
-const showSelectedView = (viewNo) =>{
+const showSelectedView = (viewNo) => {
 
-    switch(viewNo){
-
+    switch(viewNo) {
         case VIEW_NO.SIGN_UP_VIEW:
             signUpWrap.style.display = 'block';
             signInWrap.style.display = 'none';
@@ -66,11 +65,13 @@ const showSelectedView = (viewNo) =>{
             listWrap.style.display = 'block';
             break;
 
-
-
+        case VIEW_NO.HOME_VIEW:
+            signUpWrap.style.display = 'none';
+            signInWrap.style.display = 'none';
+            writeWrap.style.display = 'none';
+            listWrap.style.display = 'none';
+            break;
 
     }
-
-
 
 }
