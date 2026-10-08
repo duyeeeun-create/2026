@@ -33,7 +33,9 @@ function addEvents() {
     signOutMenuBtn.addEventListener('click', function() {
         console.log('signOutMenuBtn CLICKED!!');
          
-        currentSingInedMemberID = '';
+        // currentSingInedMemberID = '';
+        setcurrentSingInedMemberID();
+
         setMenuStatus(SIGN_OUT_STATUS);
         showSelectedView(VIEW_NO.SIGN_OUT_VIEW);
       
@@ -100,7 +102,9 @@ signInBtn.addEventListener('click',function() { //핸들러(SW전반에 용어),
         showSelectedView(VIEW_NO.HOME_VIEW);
         setMenuStatus(SIGN_IN_STATUS);
     } else {
-        currentSingInedMemberID = '';
+        // currentSingInedMemberID = '';
+        setcurrentSingInedMemberID();
+
         alert('SIGN-IN FAIL!!');
         showSelectedView(VIEW_NO.SIGN_IN_VIEW);
         setMenuStatus(SIGN_OUT_STATUS);
@@ -117,6 +121,14 @@ signInBtn.addEventListener('click',function() { //핸들러(SW전반에 용어),
 
 });
 
+let writeBtn = document.querySelector('div.write_wrap button');
+writeBtn.addEventListener('click', function(){
+    console.log('writeBtn CLICKED!!');
+
+let diary = document.querySelector('div.write_wrap input').value;
+addDiary(diary);
+
+});
 
 }
 /* FUCTION BUTTON CLICK EVENT END */

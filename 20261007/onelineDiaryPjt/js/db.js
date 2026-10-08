@@ -1,5 +1,5 @@
 const memberDB = new Map();
-
+const diaryDB = new Map();
 /*MEMBER DB START*/
 //sign-up(create)
 const addMember = (id,pw,mail) =>{
@@ -9,8 +9,13 @@ const addMember = (id,pw,mail) =>{
         u_id: id, 
         u_pw: pw,
         u_mail: mail
+    
     });
+
+   diaryDB .set (id,[]);
+
    console.log(memberDB.get(id));
+   console.log(diaryDB.get(id));//[]
 }
 //sign-in(read)
 const searchMember = (id, pw) =>{
@@ -28,6 +33,22 @@ const searchMember = (id, pw) =>{
 }
 
 /*MEMBER DB END*/
+
+/*DIARY DB START*/
+const addDiary = (diary) =>{
+    console.log('addDiary() CALLED!!');
+
+    let u_id = getcurrentSingInedMemberID();
+    let diaries = diaryDB.get(u_id);
+    diaries.push(diary)
+    
+    console.log(`diaries: ${diaries}`);
+}
+const searchDiaries = () => {
+    console.log('searchDiaries() CALLED!!');
+}
+
+/*DIARY DB END*/
 
 /* SET DUMY DATA START */
 if(IS_DEV){
