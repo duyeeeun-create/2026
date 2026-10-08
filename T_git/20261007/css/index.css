@@ -1,0 +1,113 @@
+#wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* title_wrap START */
+#wrap > div.title_wrap {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: thick double #dadada;
+}
+/* title_wrap EBND */
+
+/* menu_wrap START */
+#wrap > div.menu_wrap {
+    text-align: center;
+}
+
+#wrap > div.menu_wrap a {
+    display: inline-block;
+    width: 100px;
+    margin: 10px 5px;
+    padding: 10px;
+    border: 1px solid #dadada;
+    border-radius: 7px;
+    text-align: center;
+}
+
+#wrap > div.menu_wrap a:hover {
+    text-decoration: none;
+    background-color: #f8f8f8;
+}
+/* menu_wrap END */
+
+/* sign_up_wrap START */
+#wrap > div.sign_up_wrap {
+    text-align: center;
+    display: none;
+}
+
+#wrap > div.sign_up_wrap input {
+    width: 400px;
+    padding: 10px;
+    margin: 1px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+}
+
+#wrap > div.sign_up_wrap input[type="button"] {
+    width: 100px;
+    cursor: pointer;
+}
+
+#wrap > div.sign_up_wrap input[type="button"]:hover {
+    background-color: #f8f8f8;
+}
+/* sign_up_wrap END */
+
+/* sign_in_wrap START */
+#wrap > div.sign_in_wrap {
+    text-align: center;
+    display: none;
+}
+
+#wrap > div.sign_in_wrap input {
+    width: 400px;
+    padding: 10px;
+    margin: 1px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+}
+
+#wrap > div.sign_in_wrap input[type="button"] {
+    width: 100px;
+    cursor: pointer;
+}
+
+#wrap > div.sign_in_wrap input[type="button"]:hover {
+    background-color: #f8f8f8;
+}
+/* sign_in_wrap END */
+
+/* write_wrap START */
+#wrap > div.write_wrap {
+    text-align: center;
+    display: none;
+}
+
+#wrap > div.write_wrap input {
+    width: 500px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #dadada;
+    border-radius: 7px;
+    font-size: 1.2em;
+}
+
+#wrap > div.write_wrap button {
+    padding: 20px;
+    margin: 10px 5px;
+    border: 1px solid #dadada;
+    border-radius: 7px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#wrap > div.write_wrap button:hover {
+    background-color: #f8f8f8;
+}
+/* write_wrap END */

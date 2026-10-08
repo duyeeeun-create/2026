@@ -88,46 +88,45 @@ var month = now.getMonth(); // 0~ 11 : -1해서나옴
 var date = now.getDate();
 var day = now.getDay();
 
-console.log(`year: ${year}`);
-console.log(`month: ${month}`);
-console.log(`date: ${date}`);
-console.log(`day: ${day}`);
+// console.log(`year: ${year}`);
+// console.log(`month: ${month}`);
+// console.log(`day: ${day}`);
 
-var dayString = '';
-switch(day) {
-    case 1:
-        console.log('월요일');
-        dayString = '월';
-        break;
-    case 2:
-        console.log('화요일');
-        dayString = '화';
-        break;
-    case 3:
-        console.log('수요일');
-        dayString = '수';
-        break; 
-    case 4:
-        console.log('목요일');
-        dayString = '목';
-        break;
-    case 5:
-        console.log('금요일');
-        dayString = '금';
-        break;
-    case 6:
-        console.log('토요일');
-        dayString = '토';
-        break;
-    case 0:
-        console.log('일요일');
-        dayString = '일';
-        break;
+// var dayString = '';
+// switch(day) {
+//     case 1:
+//         console.log('월요일');
+//         dayString = '월';
+//         break;
+//     case 2:
+//         console.log('화요일');
+//         dayString = '화';
+//         break;
+//     case 3:
+//         console.log('수요일');
+//         dayString = '수';
+//         break; 
+//     case 4:
+//         console.log('목요일');
+//         dayString = '목';
+//         break;
+//     case 5:
+//         console.log('금요일');
+//         dayString = '금';
+//         break;
+//     case 6:
+//         console.log('토요일');
+//         dayString = '토';
+//         break;
+//     case 0:
+//         console.log('일요일');
+//         dayString = '일';
+//         break;
 
-    default: // 모든 경우의 수가 아닐때
-        console.log('모르겠어요');
-        break;
-}
+//     default: // 모든 경우의 수가 아닐때
+//         console.log('모르겠어요');
+//         break;
+// }
 
 console.log(`${year}년 ${month+1}월 ${date}일 ${dayString}요일`);
 
