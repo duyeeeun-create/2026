@@ -33,6 +33,10 @@
     text-decoration: none;
     background-color: #f8f8f8;
 }
+
+#wrap > div.menu_wrap a.sign_out {
+    display: none;
+}
 /* menu_wrap END */
 
 /* sign_up_wrap START */

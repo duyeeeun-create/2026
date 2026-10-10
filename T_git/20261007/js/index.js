@@ -33,6 +33,10 @@ function addEvents() {
     signOutMenuBtn.addEventListener('click', function() {
         console.log('signOutMenuBtn CLICKED!!');
 
+        // currentSignInedMemberID = '';
+        setCurrentSignInedMemberID();
+
+        setMenuStatus(SIGN_OUT_STATUS);
         showSelectedView(VIEW_NO.SIGN_OUT_VIEW);
         
     });
@@ -53,5 +57,78 @@ function addEvents() {
 
     });
     /* MENU CLICK EVENT END */
+
+    /* FUNCTION BUTTON CLICK EVENT START */
+    let signUpBtn = document.querySelector('div.sign_up_wrap input[type="button"]');
+    signUpBtn.addEventListener('click', function() {  // 핸들러(SW전반에 용어), 콜백함수(JS)
+        console.log('signUpBtn CLICKED!!');
+
+        let u_id = document.querySelector('div.sign_up_wrap input[name="u_id"]').value;
+        let u_pw = document.querySelector('div.sign_up_wrap input[name="u_pw"]').value;
+        let u_mail = document.querySelector('div.sign_up_wrap input[name="u_mail"]').value;
+
+        addMember(u_id, u_pw, u_mail);
+
+        alert('SIGN-UP SUCCESS!!');
+
+        // document.querySelector('div.sign_up_wrap input[name="u_id"]').value = '';
+        // document.querySelector('div.sign_up_wrap input[name="u_pw"]').value = '';
+        // document.querySelector('div.sign_up_wrap input[name="u_mail"]').value = '';
+
+        doElementValueClean(
+            document.querySelector('div.sign_up_wrap input[name="u_id"]'),
+            document.querySelector('div.sign_up_wrap input[name="u_pw"]'),
+            document.querySelector('div.sign_up_wrap input[name="u_mail"]')
+        );
+
+        showSelectedView(VIEW_NO.SIGN_IN_VIEW);
+
+    });
+
+    let signInBtn = document.querySelector('div.sign_in_wrap input[type="button"]');
+    signInBtn.addEventListener('click', function() {  // 핸들러(SW전반에 용어), 콜백함수(JS)
+        console.log('signInBtn CLICKED!!');
+
+        let u_id = document.querySelector('div.sign_in_wrap input[name="u_id"]').value;
+        let u_pw = document.querySelector('div.sign_in_wrap input[name="u_pw"]').value;
+
+        let signInResult = searchMember(u_id, u_pw);  // true or false
+        if (signInResult) {
+            // currentSignInedMemberID = u_id;
+            setCurrentSignInedMemberID(u_id);
+
+            alert('SIGN-IN SUCCESS!!');
+            showSelectedView(VIEW_NO.HOME_VIEW);
+            setMenuStatus(SIGN_IN_STATUS);
+
+        } else {
+            // currentSignInedMemberID = '';
+            setCurrentSignInedMemberID();
+
+            alert('SIGN-IN FAIL!!');
+            showSelectedView(VIEW_NO.SIGN_IN_VIEW);
+            setMenuStatus(SIGN_OUT_STATUS);
+
+        }
+
+        // document.querySelector('div.sign_in_wrap input[name="u_id"]').value = '';
+        // document.querySelector('div.sign_in_wrap input[name="u_pw"]').value = '';
+
+        doElementValueClean(
+            document.querySelector('div.sign_in_wrap input[name="u_id"]'),
+            document.querySelector('div.sign_in_wrap input[name="u_pw"]')
+        )
+
+    });
+
+    let writeBtn = document.querySelector('div.write_wrap button');
+    writeBtn.addEventListener('click', function() {
+        console.log('writeBtn CLICKED!!');
+
+        let diary = document.querySelector('div.write_wrap input').value;
+        addDiary(diary);
+
+    });
+    /* FUNCTION BUTTON CLICK EVENT END */
 
 }
