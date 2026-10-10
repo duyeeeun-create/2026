@@ -1,0 +1,82 @@
+#wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* TITTLE_WRAP START*/
+#wrap > div.title_wrap {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: thick double #dadada;
+}
+/* TITTLE_WRAP END*/
+
+/* MENU_WRAP START*/
+#wrap > div.menu_wrap {
+    text-align: center;
+}
+
+#wrap > div.menu_wrap a {
+    display: inline-block;
+    width: 100px;
+    margin: 10px 5px;
+    padding: 10px;
+    border: 1px solid #dadada;
+    border-radius: 7px;
+    text-align: center;
+}
+
+#wrap > div.menu_wrap a:hover {
+    text-decoration: none;
+    background-color: #f8f8f8;
+}
+
+#wrap > div.menu_wrap a.sign_out {
+    display: none;
+}
+/* MENU_WRAP END*/
+
+/* SIGN_UP_WRAP STARP*/
+#wrap > div.sign_up_wrap {
+    text-align: center;
+    display: none;
+}
+
+#wrap > div.sign_up_wrap input {
+    width: 400px;
+    padding: 10px;
+    margin: 1px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+}
+
+#wrap > div.sign_up_wrap input[type = "button"] {
+    width: 100px;
+    cursor: pointer;
+}
+
+#wrap > div.sign_up_wrap input[type = "button"]:hover {
+    background-color: #f8f8f8;
+}
+/* SIGN_UP_WRAP END*/
+
+/* SIGN_IN_WRAP START*/
+
+#wrap > div.sign_in_wrap {
+    text-align: center;
+    display: none;
+}
+
+#wrap > div.sign_in_wrap input {
+    width: 400px;
+    padding: 10px;
+    margin: 1px;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+}
+
+
+/* SIGN_IN_WRAP END*/
