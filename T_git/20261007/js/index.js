@@ -71,9 +71,9 @@ function addEvents() {
 
         alert('SIGN-UP SUCCESS!!');
 
-        // document.querySelector('div.sign_up_wrap input[name="u_id"]').value = '';
-        // document.querySelector('div.sign_up_wrap input[name="u_pw"]').value = '';
-        // document.querySelector('div.sign_up_wrap input[name="u_mail"]').value = '';
+        document.querySelector('div.sign_up_wrap input[name="u_id"]').value = '';
+        document.querySelector('div.sign_up_wrap input[name="u_pw"]').value = '';
+        document.querySelector('div.sign_up_wrap input[name="u_mail"]').value = '';
 
         doElementValueClean(
             document.querySelector('div.sign_up_wrap input[name="u_id"]'),
