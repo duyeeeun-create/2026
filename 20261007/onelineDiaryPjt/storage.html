@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WEB STORAGE</title>
+
+    <script>
+        //localstorage
+        //데이터 생성
+        //localStorage.setItem(key, value(only string));
+        localStorage.setItem("uesrname", "홍길동");
+        localStorage.setItem("uesrage", "25");
+
+        //데이터 조회
+        let u_name = localStorage.getItem("uesrname");
+        let u_age = localStorage.getItem("uesrage");
+
+        console.log(`u_name: ${u_name},u_age${u_age} `);
+
+        //데이터 수정
+        localStorage.setItem("uesrage", "30");
+        u_age = localStorage.getItem("uesrage");
+        console.log(`u_name: ${u_name},u_age${u_age} `);
+
+        //데이터 삭제
+        localStorage.removeItem("uesrage");
+        localStorage.clear(); // all remove
+
+        // sessionStorage
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
