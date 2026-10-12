@@ -58,12 +58,12 @@ const showSelectedView = (viewNo) => {
             listWrap.style.display = 'block';
             break;
 
-        case VIEW_NO.HOME_VIEW:
+        case VIEW_NO.HOME_VIEW: // 밑에 뜨는 항목들 
             signUpWrap.style.display = 'none';
             signInWrap.style.display = 'none';
             writeWrap.style.display = 'none';
             listWrap.style.display = 'none';
-            break;
+            break; 
 
    
     }

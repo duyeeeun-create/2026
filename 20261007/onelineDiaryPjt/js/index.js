@@ -53,8 +53,22 @@ function addEvents() {
     let listMenuBtn = document.querySelector('div.menu_wrap a.list');
     listMenuBtn.addEventListener('click', function() {
         console.log('listMenuBtn CLICKED!!');
+
+       let myDiaries = [...searchDiaries(getcurrentSingInedMemberID())].reverse();
+       // 원본 카피 리버스 바로 하면 원본 데이터가 훼손되기 때문에 계속 바뀐다
         
-        showSelectedView(VIEW_NO.DIARY_LIST_VIEW);
+       let ulEle = document.querySelector('div.list_wrap >ul');
+       let liEles ='';
+
+       for (let i = 0; i < myDiaries.length; i++){
+        liEles += `<li>${myDiaries[i]}</li>`;
+       }
+
+       console.log('liEles :', liEles);
+
+       ulEle.innerHTML = liEles;
+
+      showSelectedView(VIEW_NO.DIARY_LIST_VIEW);
 
     });
     /* MENU CLICK EVENT END */
@@ -127,7 +141,9 @@ writeBtn.addEventListener('click', function(){
 
 let diary = document.querySelector('div.write_wrap input').value;
 addDiary(diary);
+alert('DIARY WRITE SUCCESS!!');
 
+document.querySelector('div.write_wrap input').value = '';
 });
 
 }
